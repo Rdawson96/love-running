@@ -8,12 +8,12 @@
     box-sizing: border-box;
 }
 
-/* General Styles */
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*Generic project styles */
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
@@ -49,7 +49,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu>li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -57,7 +57,7 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar styles with dropdown toggle*/
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -82,14 +82,18 @@ nav {
     font-size: 2rem;
 }
 
-
-/* Main */
+/* Main content */
 main {
-    background-color: lightblue;
-    /* make element take up any surplus space to push footer down*/
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
-    display: flex;
+}
+
+/* Hero Section*/
+#hero {
+    height:600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /* Footer */
@@ -104,7 +108,7 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -122,8 +126,8 @@ main {
         display: flex;
     }
 
-    #menu>li {
-        padding-left: 1em;
+    #menu > li {
+        padding-left: 1rem;
     }
 
     .nav-toggle-label {
@@ -135,16 +139,17 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-    /* Main Content */
+
+    /* Main content */
     main {
-        /* Push main content to accomodate larger header */
-        margin-top:79px;
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
     }
 }
-    /* large devices (laptops and desktops, 992px and up) */
+
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }
 }
-
